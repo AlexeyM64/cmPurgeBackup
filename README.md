@@ -1,5 +1,7 @@
-## objectscript-contest-template
-This is a template for InterSystems IRIS, Docker and ObjectScript Online contest. 
+# cmPurgeBackup
+cmPurgeBackup is an utility that can be used to erase old InterSystems IRIS/Caché/Ensemble Online Backup files. It runs as a Task Manager task. It is fully compatible with all predefined classes of backup tasks, such as FullDBList, IncrementalDBList, etc., and it does not require any changes to the code that is used in these tasks.
+
+objectscript-contest-template was used 
 [Topic and Terms](https://community.intersystems.com/post/join-online-programming-contest-intersystems-iris-docker-and-objectscript)
 
 ## Prerequisites
