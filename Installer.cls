@@ -20,8 +20,8 @@ XData setup
     />
     
     <!-- Import tasks -->
- <If Condition='#{##class(%File).Exists("${SourceDir}/tasks.xml")}'>
-<Log Level="0" Text="Tasks will be imported from ${SourceDir}tasks.xml" />
+<Log Level="0" Text="Tasks are going to be imported from ${SourceDir}tasks.xml" />
+ <If Condition='#{##class(%File).Exists("${SourceDir}tasks.xml")}'>
   <Invoke Class="%z.Installer" Method="TasksImportAndSchedule" CheckStatus="1">
    <Arg Value="${SourceDir}tasks.xml"/>
    <Arg Value="${Namespace}"/>
