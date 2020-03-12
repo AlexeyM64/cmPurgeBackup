@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tasks><Task>
+  <Name>FullDBList</Name>
+  <RunAsUser>_SYSTEM</RunAsUser>
+  <EmailOutput>false</EmailOutput>
+  <Expires>false</Expires>
+  <OpenOutputFile>false</OpenOutputFile>
+  <OutputFileIsBinary>true</OutputFileIsBinary>
+  <SuspendOnError>false</SuspendOnError>
+  <Suspended>0</Suspended>
+  <Priority>0</Priority>
+  <TaskClass>%SYS.Task.BackupFullDatabaseList</TaskClass>
+  <Settings>CAFEZXZpY2UaAS91c3IvaXJpc3N5cy9tZ3IvQmFja3VwLwwBU2F2ZVRvVGFwZQMBMAwBVGFwZURldmljZQQBNDc=</Settings>
+  <IsBatch>false</IsBatch>
+  <NameSpace>%SYS</NameSpace>
+  <TimePeriod>5</TimePeriod>
+  <TimePeriodEvery>1</TimePeriodEvery>
+  <DailyFrequency>0</DailyFrequency>
+  <DailyFrequencyTime>0</DailyFrequencyTime>
+  <DailyStartTime>00:00:00</DailyStartTime>
+  <DailyEndTime>00:00:00</DailyEndTime>
+  <JobGUID>7565886C-6467-11EA-8018-0242AC150002</JobGUID>
+  <StartDate>2020-03-13</StartDate>
+  <MirrorStatus>1</MirrorStatus>
+  <Type>2</Type>
+  <RescheduleOnStart>true</RescheduleOnStart>
+  <DeleteAfterRun>false</DeleteAfterRun>
+  <Description>Full Backup Using DB List</Description>
+</Task>
+
+<Task>
+  <Name>cmPurgeBackup</Name>
+  <RunAsUser>_SYSTEM</RunAsUser>
+  <EmailOutput>false</EmailOutput>
+  <Expires>false</Expires>
+  <OpenOutputFile>false</OpenOutputFile>
+  <OutputFileIsBinary>true</OutputFileIsBinary>
+  <SuspendOnError>false</SuspendOnError>
+  <Suspended>0</Suspended>
+  <Priority>0</Priority>
+  <TaskClass>cm.Task.PurgeBackup</TaskClass>
+  <Settings>CwFGcmVlU3BhY2UFAS4xNhMBRnVsbEJhY2t1cHNUb0tlZXADATERAUhpc3RvcnlMaWZlU3BhbgUBMzY2CQFMb2dGaWxlAgEKAUxvZ0xldmVsAwEy</Settings>
+  <IsBatch>false</IsBatch>
+  <NameSpace>IRISAPP</NameSpace>
+  <TimePeriod>4</TimePeriod>
+  <TimePeriodEvery>1</TimePeriodEvery>
+  <DailyFrequency>0</DailyFrequency>
+  <DailyFrequencyTime>0</DailyFrequencyTime>
+  <DailyStartTime>00:00:00</DailyStartTime>
+  <DailyEndTime>00:00:00</DailyEndTime>
+  <JobGUID>B09C639C-6467-11EA-8018-0242AC150002</JobGUID>
+  <RunAfterGUID>7565886C-6467-11EA-8018-0242AC150002</RunAfterGUID>
+  <StartDate>2020-03-13</StartDate>
+  <MirrorStatus>1</MirrorStatus>
+  <Type>2</Type>
+  <RescheduleOnStart>true</RescheduleOnStart>
+  <DeleteAfterRun>false</DeleteAfterRun>
+  <Description>Purge .cbk and .log Files</Description>
+</Task>
+</Tasks>
