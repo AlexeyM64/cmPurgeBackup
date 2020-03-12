@@ -50,7 +50,7 @@ ClassMethod TasksImportAndSchedule(pFile, pNamespace) As %Status
 	    s tid=Rset.Data("ID")
 	    s refT=##class(%SYS.Task).%OpenId(tid)
 	    ;useless because if NameSpace does not exist, task won't be imported;
-	    if refT.NameSpace'="%SYS" s refT.NameSpace=pNamespace
+	    ;if refT.NameSpace'="%SYS" s refT.NameSpace=pNamespace
 	    s sc=refT.%Save()
 	    if 'sc g TIASq
        }
