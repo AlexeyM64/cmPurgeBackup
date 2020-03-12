@@ -1,4 +1,4 @@
-Class App.Installer
+Class %z.Installer
 {
 
 XData setup
@@ -22,7 +22,7 @@ XData setup
     <!-- Import tasks -->
  <If Condition='#{##class(%File).Exists("${SourceDir}/tasks.xml")}'>
 <Log Level="0" Text="Tasks will be imported from ${SourceDir}tasks.xml" />
-  <Invoke Class="App.Installer" Method="TasksImportAndSchedule" CheckStatus="1">
+  <Invoke Class="%z.Installer" Method="TasksImportAndSchedule" CheckStatus="1">
    <Arg Value="${SourceDir}tasks.xml"/>
    <Arg Value="${Namespace}"/>
   </Invoke>
