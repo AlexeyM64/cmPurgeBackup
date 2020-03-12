@@ -11,7 +11,7 @@ XData setup
   <Namespace Name="${Namespace}" Code="${Namespace}" Data="${Namespace}" Create="yes" Ensemble="no">
 
     <Configuration>
-      <Database Name="${Namespace}" Dir="/opt/${app}/data" Create="no" Resource="%DB_${Namespace}"/>
+      <Database Name="${Namespace}" Dir="/opt/${app}/data" Create="yes" Resource="%DB_${Namespace}"/>
 
       <Import File="${SourceDir}src" Flags="ck" Recurse="1"/>
     </Configuration>
