@@ -30,6 +30,8 @@ $ docker-compose up -d
 ## How to Run the Application
 
 Point your browser to System Management Portal and go to System > Task Manager > Task Schedule.
-You will notice two custom tasks: FullDBList and cmPurgeBackup. The latter is scheduled on FullDBList comletetion. Current setting is to leave the last Full Backup file (.cbk) only, you may change it editing the cmPurgeBackup task settings.
+You will notice two custom tasks: FullDBList and cmPurgeBackup. The first is scheduled to run on demand, the latter - to run on FullDBList completion.
+
+Current setting of cmPurgeBackup is to leave the last Full Backup file (.cbk) only, which can be changed if you wish. Possible task's settings are discussed in the correspondent developers' community article.
 
 ## Have fun!
