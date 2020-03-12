@@ -12,16 +12,16 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 Open terminal and clone/git pull the repo into any local directory
 
 ```
-$ git clone git@github.com:intersystems-community/objectscript-contest-template.git
+$ git clone https://github.com/AlexeyM64/cmPurgeBackup.git
 ```
 
 Open the terminal in this directory and run:
 
 ```
-$ docker-compose build
+$ cd cmPurgeBackup; docker-compose build
 ```
 
-3. Run the IRIS container with your project:
+3. Run the IRIS container:
 
 ```
 $ docker-compose up -d
@@ -29,29 +29,7 @@ $ docker-compose up -d
 
 ## How to Run the Application
 
-Open InterSystems IRIS terminal:
+Point your browser to System Management Portal and go to System > Task Manager > Task Schedule.
+You will notice two custom tasks: FullDBList and cmPurgeBackup. The latter is scheduled on FullDBList comletetion. Current setting is to leave the last Full Backup file (.cbk) only, you may change it editing the cmPurgeBackup task settings.
 
-```
-$ docker-compose exec iris iris session iris
-USER>zn "IRISAPP"
-IRISAPP>do ##class(Contest.ObjectScript).TheUniverseQuestion()
-42
-```
-## How to start coding
-This repository is ready to code in VSCode with ObjectScript plugin.
-Install [VSCode](https://code.visualstudio.com/), [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [ObjectScript](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) plugins and open the folder in VSCode.
-
-Right-click on **docker-compose.yml** file and click Compose Restart
-
-Once docker will finish starting procedure and show:
-
-```
-Creating objectscript-contest-template_iris_1 ... done
-```
-
-Click on the ObjectScript status bar and select Refresh connection in the menu.
-Wait for VSCode to make connection and show something like "localhost:32778[IRISAPP] - Connected"
-
-You can start coding after that. Open **ObjectScript.cls** in VSCode, make changes and save - the class will be compiled by IRIS on 'Save'.
-
-## Happy coding!
+## Have fun!
