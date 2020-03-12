@@ -1,8 +1,8 @@
 # cmPurgeBackup
 cmPurgeBackup is an utility that can be used to erase old InterSystems IRIS/Caché/Ensemble Online Backup files. It runs as a Task Manager task. It is fully compatible with all predefined classes of backup tasks, such as FullDBList, IncrementalDBList, etc., and it does not require any changes to the code that is used in these tasks.
 
-objectscript-contest-template was used 
-[Topic and Terms](https://community.intersystems.com/post/join-online-programming-contest-intersystems-iris-docker-and-objectscript)
+Objectscript contest template was used
+[Topic and Terms](https://community.intersystems.com/post/join-online-programming-contest-intersystems-iris-docker-and-objectscript).
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
@@ -32,6 +32,6 @@ $ docker-compose up -d
 Point your browser to System Management Portal and go to System > Task Manager > Task Schedule.
 You will notice two custom tasks: FullDBList and cmPurgeBackup. The first is scheduled to run on demand, the latter - to run on FullDBList completion.
 
-Current setting of cmPurgeBackup is to leave the last Full Backup file (.cbk) only, which can be changed if you wish. Possible task's settings are discussed in the correspondent developers' community article.
+Current setting of cmPurgeBackup is to leave the last Full Backup file (.cbk) only; you may change it if you wish. Possible task's settings are discussed in the correspondent developers' community article.
 
 ## Have fun!
