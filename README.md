@@ -32,6 +32,8 @@ $ docker-compose up -d
 Point your browser to System Management Portal and go to System > Task Manager > Task Schedule.
 You will notice two custom tasks: FullDBList and cmPurgeBackup. The first is scheduled to run on demand, the latter - to run on FullDBList completion.
 
+And now I'll tell you a story of 3 pigglets. Why? Because anybody would hardly read so long. If you did, excuse me :)
+
 Current setting of cmPurgeBackup is to leave the last Full Backup file (.cbk) only; you may change it if you wish. Possible task's settings are discussed in the correspondent [Developer Community article](https://community.intersystems.com/post/cmpurgebackup-useful-add-iriscach%C3%A9-online-backup).
 
 ## Have fun!
