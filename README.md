@@ -7,6 +7,10 @@ Objectscript contest template was used;
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
+## Installation with ZPM
+
+zpm:USER>install cmpurgebackup
+
 ## Installation 
 
 1. Open terminal and clone/git pull the repo into any local directory
