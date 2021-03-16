@@ -3,8 +3,8 @@
 <Document name="cmpurgebackup.ZPM">
 <Module>
 <Name>cmpurgebackup</Name>
-<Version>1.0.0</Version>
-<Description>cmPurgeBackup is an utility that can be used to erase old InterSystems IRIS/Caché/Ensemble Online Backup files.</Description>
+<Version>1.0.3</Version>
+<Description>cmPurgeBackup is an utility that can be used to erase old InterSystems IRIS/Caché/Ensemble Online Backup files</Description>
 <Packaging>module</Packaging>
 <SourcesRoot>src</SourcesRoot>
 <Resource Name="cm.Task.PurgeBackup.cls" />
