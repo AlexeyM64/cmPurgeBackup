@@ -1,4 +1,6 @@
 # cmPurgeBackup
+ [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2FcmPurgeBackup&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2FcmPurgeBackup)
+
 cmPurgeBackup is an utility that can be used to erase old InterSystems IRIS/Caché/Ensemble Online Backup files. It runs as a Task Manager task. It is fully compatible with all predefined classes of backup tasks, such as FullDBList, IncrementalDBList, etc., and it does not require any changes to the code that is used in these tasks.
 
 Objectscript contest template was used;
